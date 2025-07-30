@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 
 function Root() {
   return (
-    <main>
+    <main className=" bg-zinc-900">
       <Outlet />
     </main>
   );

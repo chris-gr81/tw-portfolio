@@ -9,7 +9,7 @@ interface ButtonProps {
 
 function Button({ text, href, iconSrc = "" }: ButtonProps) {
   const styling =
-    "flex flex-row items-center justify-center gap-1 bg-emerald-600 text-white py-3 px-4 w-fit rounded-md text-sm font-medium";
+    "flex flex-row items-center justify-center gap-1 bg-emerald-600 hover:bg-emerald-400 text-white py-3 px-4 w-fit rounded-md text-sm font-medium";
   return href ? (
     <a href={href} className={styling}>
       {text} <ReactSVG src={iconSrc} />
