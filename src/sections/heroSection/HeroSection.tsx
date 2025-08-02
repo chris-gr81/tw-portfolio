@@ -50,7 +50,7 @@ function HeroSection() {
         </div>
         <Button
           text="Projekte ansehen"
-          href="#"
+          href="#project-session"
           iconSrc="/icons/IconArrowDown.svg"
         />
       </div>

@@ -1,4 +1,5 @@
 import { ReactSVG } from "react-svg";
+import Button from "../button/Button";
 
 interface ProjectCardProps {
   picUrl: string;
@@ -21,8 +22,8 @@ function ProjectCard({
 }: ProjectCardProps) {
   return (
     <div className="w-fit">
-      <img src={picUrl} alt={picAlt} className="my-5" />
-      <h2 className="text-white font-bold text-3xl xl:text-5xl mb-5">{name}</h2>
+      <img src={picUrl} alt={picAlt} className="my-5 rounded-md" />
+      <h2 className="text-white font-medium text-3xl mb-5">{name}</h2>
       <a
         className="flex flex-row gap-2 text-emerald-600 font-medium text-lg items-center mb-4"
         href={gitDeploy}
@@ -31,13 +32,20 @@ function ProjectCard({
         <span>{gitDeploy.slice(8, -1)}</span>
         <ReactSVG src="/icons/IconArrowLink.svg" />
       </a>
-      <p className="text-zinc-400">{text}</p>
-      <div className="text-white">
+      <p className="text-zinc-400 mb-4">{text}</p>
+      <div className="flex flex-wrap text-white mb-8 gap-2">
         {hashTags.map((tag) => (
-          <span key={tag}>{tag}</span>
+          <span className="bg-zinc-700 px-2 py-1 rounded-xl text-xs" key={tag}>
+            {tag}
+          </span>
         ))}
       </div>
-      <p className="text-white">{gitRepo}</p>
+      <Button
+        text="Code ansehen"
+        href={gitRepo}
+        iconSrc="/icons/IconArrowRight.svg"
+        tblank={true}
+      />
     </div>
   );
 }

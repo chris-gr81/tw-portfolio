@@ -5,18 +5,23 @@ interface ButtonProps {
   href?: string;
   oversize?: boolean;
   iconSrc?: string;
+  tblank?: boolean;
 }
 
-function Button({ text, href, iconSrc = "" }: ButtonProps) {
+function Button({ text, href, iconSrc, tblank = false }: ButtonProps) {
   const styling =
     "flex flex-row items-center justify-center gap-1 bg-emerald-600 hover:bg-emerald-400 text-white py-3 px-4 w-fit rounded-md text-sm font-medium";
+  const targeting = tblank
+    ? { target: "_blank", rel: "noopener noreferrer" }
+    : {};
+
   return href ? (
-    <a href={href} className={styling}>
-      {text} <ReactSVG src={iconSrc} />
+    <a href={href} className={styling} {...targeting}>
+      {text} {iconSrc && <ReactSVG src={iconSrc} />}
     </a>
   ) : (
     <button className={styling}>
-      {text} <ReactSVG src={iconSrc} />
+      {text} {iconSrc && <ReactSVG src={iconSrc} />}
     </button>
   );
 }

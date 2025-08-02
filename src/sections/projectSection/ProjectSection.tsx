@@ -2,15 +2,15 @@ import ProjectCard from "../../components/projectCard/ProjectCard";
 
 function ProjectSection() {
   return (
-    <section className="project-session">
-      <h2 className="text-white text-center font-bold text-3xl xl:text-5xl mb-5">
+    <section className="project-session" id="project-session">
+      <h2 className="text-white text-center font-medium text-3xl xl:text-5xl mb-5">
         Meine Projekte
       </h2>
-      <p className="text-zinc-400 text-center xl:text-xl">
+      <p className="text-zinc-400 text-center mb-10">
         Nachstehend finden Sie ausgewählte Referenzprojekte von mir, sodass Sie
         sich ein Bild meiner Fähigkeiten und Erfahrungen machen können.
       </p>
-      <div className="projects-wrapper">
+      <div className="projects-wrapper grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20">
         <ProjectCard
           picUrl="pictures/wetterapp.png"
           picAlt="Preview Wetterapp"
