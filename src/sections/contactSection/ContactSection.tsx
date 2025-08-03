@@ -34,6 +34,7 @@ function ContactSection() {
         <h2 className="text-white font-medium text-3xl xl:text-4xl mb-5">
           Weitere Erfahrungen
         </h2>
+
         <p className="text-zinc-300 mb-8">
           Auf meinem GitHub-Profil finden Sie neben dem Sourcecode dieser
           Homepage alle Repositories, welche ich im Laufe der Zeit erstellt

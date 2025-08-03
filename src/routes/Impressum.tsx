@@ -3,6 +3,7 @@ import FooterSection from "../sections/footerSection/FooterSection";
 import { ReactSVG } from "react-svg";
 
 function Impressum() {
+  // colors white?
   return (
     <div className="flex flex-col gap-40 text-white p-4 h-screen">
       <Link to="/" className="flex flex-row gap-2 items-center">

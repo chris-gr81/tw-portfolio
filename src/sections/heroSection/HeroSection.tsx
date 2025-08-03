@@ -1,4 +1,3 @@
-import { ReactSVG } from "react-svg";
 import Button from "../../components/button/Button";
 import Socials from "../../components/socials/Socials";
 
