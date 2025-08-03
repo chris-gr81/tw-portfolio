@@ -1,6 +1,8 @@
 import Button from "../../components/button/Button";
 import Socials from "../../components/socials/Socials";
 import arrowDown from "../../assets/icons/IconArrowDown.svg";
+import techs from "../../assets/images/techs.png";
+import portrait from "../../assets/images/portrait.jpg";
 
 function HeroSection() {
   return (
@@ -8,7 +10,7 @@ function HeroSection() {
       <div className="flex flex-col gap-6">
         <img
           className="rounded-full w-24 h-24 lg:w-28 lg:h-28"
-          src="src/assets/images/portrait.jpg"
+          src={portrait}
           alt="portrait picture of the developer"
         />
         <h2 className="text-lg xl:text-xl text-white ">
@@ -42,7 +44,7 @@ function HeroSection() {
       </div>
       <div>
         <img
-          src="src/assets/images/techs.png"
+          src={techs}
           alt="Tech-Stack-Logos"
           className="w-full max-w-[500px] lg:w-[500px]"
         />

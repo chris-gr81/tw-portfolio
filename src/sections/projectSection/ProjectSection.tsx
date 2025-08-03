@@ -1,4 +1,7 @@
 import ProjectCard from "../../components/projectCard/ProjectCard";
+import wetterapp from "../../assets/images/wetterapp.png";
+import userdirectory from "../../assets/images/userdirectory.png";
+import writtenquotes from "../../assets/images/writtenquotes.png";
 
 function ProjectSection() {
   return (
@@ -15,7 +18,7 @@ function ProjectSection() {
       </p>
       <div className="projects-wrapper grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-20">
         <ProjectCard
-          picUrl="src/assets/images//wetterapp.png"
+          picUrl={wetterapp}
           picAlt="Preview Wetterapp"
           name="Wheater Application"
           gitDeploy="https://chris-gr81.github.io/wetterapp/"
@@ -28,7 +31,7 @@ function ProjectSection() {
           hashTags={["HTML", "JavaScript", "Vite", "SCSS", "BEM", "WheaterAPI"]}
         />
         <ProjectCard
-          picUrl="src/assets/images//userdirectory.png"
+          picUrl={userdirectory}
           picAlt="Preview User Directory"
           name="User Directory"
           gitDeploy="https://chris-gr81.github.io/user-directory/"
@@ -48,7 +51,7 @@ function ProjectSection() {
           ]}
         />
         <ProjectCard
-          picUrl="src/assets/images//writtenquotes.png"
+          picUrl={writtenquotes}
           picAlt="Preview Written Quotes"
           name="Written Quotes"
           gitDeploy="https://chris-gr81.github.io/written-quote/"
