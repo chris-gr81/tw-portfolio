@@ -1,4 +1,6 @@
 import { ReactSVG } from "react-svg";
+import iconGitHub from "../../assets/icons/IconGitHub.svg";
+import iconLinkedIn from "../../assets/icons/IconLinkedIn.svg";
 
 function Socials() {
   return (
@@ -8,10 +10,10 @@ function Socials() {
         className="group"
         target="blank"
       >
-        <ReactSVG src="/icons/IconLinkedIn.svg" />
+        <ReactSVG src={iconLinkedIn} />
       </a>
       <a href="https://github.com/chris-gr81" className="group" target="blank">
-        <ReactSVG src="/icons/IconGitHub.svg" />
+        <ReactSVG src={iconGitHub} />
       </a>
     </div>
   );

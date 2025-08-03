@@ -1,5 +1,7 @@
 import { ReactSVG } from "react-svg";
 import Button from "../button/Button";
+import arrowRight from "../../assets/icons/IconArrowRight.svg";
+import arrowLink from "../../assets/icons/IconArrowLink.svg";
 
 interface ProjectCardProps {
   picUrl: string;
@@ -30,7 +32,7 @@ function ProjectCard({
         target="blank"
       >
         <span>{gitDeploy.slice(8, -1)}</span>
-        <ReactSVG src="/icons/IconArrowLink.svg" />
+        <ReactSVG src={arrowLink} />
       </a>
       <p className="text-zinc-400 mb-4">{text}</p>
       <div className="flex flex-wrap text-white mb-8 gap-2">
@@ -43,7 +45,7 @@ function ProjectCard({
       <Button
         text="Code ansehen"
         href={gitRepo}
-        iconSrc="/icons/IconArrowRight.svg"
+        iconSrc={arrowRight}
         tblank={true}
       />
     </div>

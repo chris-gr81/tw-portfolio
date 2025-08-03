@@ -1,5 +1,6 @@
 import Button from "../../components/button/Button";
 import Socials from "../../components/socials/Socials";
+import arrowDown from "../../assets/icons/IconArrowDown.svg";
 
 function HeroSection() {
   return (
@@ -7,7 +8,7 @@ function HeroSection() {
       <div className="flex flex-col gap-6">
         <img
           className="rounded-full w-24 h-24 lg:w-28 lg:h-28"
-          src="pictures/portrait.jpg"
+          src="src/assets/images/portrait.jpg"
           alt="portrait picture of the developer"
         />
         <h2 className="text-lg xl:text-xl text-white ">
@@ -36,12 +37,12 @@ function HeroSection() {
         <Button
           text="Projekte ansehen"
           href="#project-session"
-          iconSrc="/icons/IconArrowDown.svg"
+          iconSrc={arrowDown}
         />
       </div>
       <div>
         <img
-          src="pictures/techs.png"
+          src="src/assets/images/techs.png"
           alt="Tech-Stack-Logos"
           className="w-full max-w-[500px] lg:w-[500px]"
         />

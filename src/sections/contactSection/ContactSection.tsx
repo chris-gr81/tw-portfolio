@@ -1,6 +1,8 @@
 import { ReactSVG } from "react-svg";
 import Button from "../../components/button/Button";
 import Socials from "../../components/socials/Socials";
+import iconEnvelope from "../../assets/icons/IconEnvelope.svg";
+import iconLink from "../../assets/icons/IconArrowLink.svg";
 
 function ContactSection() {
   return (
@@ -25,7 +27,7 @@ function ContactSection() {
           text-lg font-medium mb-6"
           target="blank"
         >
-          <ReactSVG src="/icons/IconEnvelope.svg" />
+          <ReactSVG src={iconEnvelope} />
           cgr@etik.com
         </a>
         <Socials />
@@ -44,7 +46,7 @@ function ContactSection() {
         <Button
           text="GitHub ansehen"
           href="https://github.com/chris-gr81"
-          iconSrc="/icons/IconArrowLink.svg"
+          iconSrc={iconLink}
           tblank={true}
           oversize={true}
         />
