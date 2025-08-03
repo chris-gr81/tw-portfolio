@@ -6,7 +6,7 @@ import Impressum from "./routes/Impressum";
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/tw-portfolio",
+      path: "/tw-portfolio/",
       element: <Root />,
       children: [
         { index: true, element: <Index /> },
