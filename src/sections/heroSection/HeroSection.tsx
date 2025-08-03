@@ -1,9 +1,10 @@
 import { ReactSVG } from "react-svg";
 import Button from "../../components/button/Button";
+import Socials from "../../components/socials/Socials";
 
 function HeroSection() {
   return (
-    <section className="hero-section flex flex-col lg:flex-row lg:items-center lg:justify-center gap-20">
+    <section className="hero-section flex flex-col lg:flex-row lg:items-center lg:justify-center gap-20 container mx-auto px-6 py-16 lg:py-24  xl:py-32">
       <div className="flex flex-col gap-6">
         <img
           className="rounded-full w-24 h-24 lg:w-28 lg:h-28"
@@ -32,22 +33,7 @@ function HeroSection() {
           genauso wie die Herausforderung, komplexe Ideen in klare Lösungen zu
           verwandeln.
         </p>
-        <div className="flex flex-row gap-8 mb-2">
-          <a
-            href="https://www.linkedin.com/in/christian-grimm-b5b854105/"
-            className="group"
-            target="blank"
-          >
-            <ReactSVG src="/icons/IconLinkedIn.svg" />
-          </a>
-          <a
-            href="https://github.com/chris-gr81"
-            className="group"
-            target="blank"
-          >
-            <ReactSVG src="/icons/IconGitHub.svg" />
-          </a>
-        </div>
+        <Socials />
         <Button
           text="Projekte ansehen"
           href="#project-session"

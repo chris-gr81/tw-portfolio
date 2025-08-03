@@ -1,11 +1,15 @@
 import HeroSection from "../sections/heroSection/HeroSection";
 import ProjectSection from "../sections/projectSection/ProjectSection";
+import ContactSection from "../sections/contactSection/ContactSection";
+import FooterSection from "../sections/footerSection/FooterSection";
 
 function Index() {
   return (
-    <div className="flex flex-col gap-40 container mx-auto px-6 py-16 lg:py-24  xl:py-32">
+    <div className="flex flex-col gap-20">
       <HeroSection />
       <ProjectSection />
+      <ContactSection />
+      <FooterSection />
     </div>
   );
 }

@@ -2,7 +2,10 @@ import ProjectCard from "../../components/projectCard/ProjectCard";
 
 function ProjectSection() {
   return (
-    <section className="project-session" id="project-session">
+    <section
+      className="project-session container mx-auto px-6"
+      id="project-session"
+    >
       <h2 className="text-white text-center font-medium text-3xl xl:text-5xl mb-5">
         Meine Projekte
       </h2>
