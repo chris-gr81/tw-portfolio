@@ -4,19 +4,16 @@ import Index from "./routes/Index";
 import Impressum from "./routes/Impressum";
 
 function App() {
-  const router = createBrowserRouter(
-    [
-      {
-        path: "/",
-        element: <Root />,
-        children: [
-          { index: true, element: <Index /> },
-          { path: "impressum", element: <Impressum /> },
-        ],
-      },
-    ],
-    { basename: "/tw-portfolio" }
-  );
+  const router = createBrowserRouter([
+    {
+      path: "/tw-portfolio",
+      element: <Root />,
+      children: [
+        { index: true, element: <Index /> },
+        { path: "impressum", element: <Impressum /> },
+      ],
+    },
+  ]);
 
   return <RouterProvider router={router} />;
 }
