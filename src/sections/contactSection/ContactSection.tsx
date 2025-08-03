@@ -36,9 +36,9 @@ function ContactSection() {
         </h2>
         <p className="text-zinc-300 mb-8">
           Auf meinem GitHub-Profil finden Sie neben dem Sourcecode dieser
-          Homepage alle Projekte, welche ich im Laufe der Zeit erstellt haben.
-          Für eine adäquate Übersicht sind die wichtigsten Projekte in der
-          Profilübersicht gepinned.
+          Homepage alle Repositories, welche ich im Laufe der Zeit erstellt
+          haben. Für eine adäquate Übersicht sind die wichtigsten Projekte in
+          der Profilübersicht gepinned.
         </p>
         <Button
           text="GitHub ansehen"
