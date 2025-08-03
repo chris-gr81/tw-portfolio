@@ -16,8 +16,8 @@ function ContactSection() {
         </h2>
         <p className="text-zinc-400 mb-6">
           Zögern Sie nicht mich zu kontaktieren. Nutzen Sie dafür gerne die
-          unten aufgeführte E-Mail Adresse oder schauen Sei auf meinen
-          Social-Media-Profilen vorbei!
+          unten aufgeführte E-Mail Adresse oder schauen Sie auf meinen
+          LinkedIn-Profil vorbei!
         </p>
         <a
           href="mailto:cgr@etik.com"
